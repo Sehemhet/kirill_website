@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    line-height: normal;
+    color: inherit;
+    text-transform: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-weight:400;
+}
+
+button, select, input {
+    border: none;
+    all: initial;
+    font-size:16px;
+}

@@ -1,0 +1,26 @@
+
+.Y1540 {display:flex;}
+.Y970 {display:flex;}
+.Y768 {display:flex;}
+.Y480 {display:flex;}
+.Y360 {display:flex;}
+
+@media (orientation: portrait) {
+}
+
+@media (max-width: 1540px) {
+    .N1540 {display:none;}
+}
+@media (max-width: 970px) {
+    .N970 {display:none;}
+}
+@media (max-width: 768px) {
+    .N768 {display:none;}
+}
+@media (max-width: 480px) {
+    .N480 {display:none;}
+    main {padding:20px 5px;}
+}
+@media (max-width: 360px) {
+    .N360 {display:none;}
+}
