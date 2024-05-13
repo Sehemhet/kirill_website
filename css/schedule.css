@@ -26,7 +26,10 @@
     flex-direction:column;
     gap:16px;
 }
-
+.schedule__col2__chapter {
+    display:flex;
+    flex-wrap:wrap;
+}
 .point {
     display:flex;
     align-items:center;
@@ -94,7 +97,7 @@
 .filter_schedule[type="text"]  {
     background-image:
         url('data:image/svg+xml;utf8,'), /* Первая картинка */
-        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgba(47, 128, 237, 1)"><path d="M10 13.66L16.36 7.3a1 1 0 0 1 1.4 1.42l-7.07 7.05a1 1 0 0 1-1.4 0L2.22 8.72a1 1 0 1 1 1.42-1.42L10 13.66z"/></svg>'); /* Вторая картинка */
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--c6)"><path d="M10 13.66L16.36 7.3a1 1 0 0 1 1.4 1.42l-7.07 7.05a1 1 0 0 1-1.4 0L2.22 8.72a1 1 0 1 1 1.42-1.42L10 13.66z"/></svg>'); /* Вторая картинка */
     background-position:
         8px center, /* Позиция первой картинки */
         calc(100% - 8px) center; /* Позиция второй картинки */
@@ -108,7 +111,7 @@
 .filter_schedule[type="text"]:focus {
     background-image:
         url('data:image/svg+xml;utf8,'), /* Первая картинка */
-        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgba(47, 128, 237, 1)"><path d="M10 6.34L3.64 12.7a1 1 0 0 1-1.4-1.42l7.07-7.05a1 1 0 0 1 1.4 0l7.07 7.05a1 1 0 0 1-1.4 1.42L10 6.34z"/></svg>'); /* Вторая картинка */
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--c6)"><path d="M10 6.34L3.64 12.7a1 1 0 0 1-1.4-1.42l7.07-7.05a1 1 0 0 1 1.4 0l7.07 7.05a1 1 0 0 1-1.4 1.42L10 6.34z"/></svg>'); /* Вторая картинка */
 }
 
 
@@ -120,14 +123,20 @@
     display:flex;
     flex-direction:column;
 }
-.hour:first-child {
+.timezone_col {
     font-size:12px;
     flex:0 0 48px;
     display:flex;
     flex-direction:column;
     justify-content:flex-end;
+    min-height:80px;
+    width:100%;
+    padding:4px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
 }
-.hour:not(:first-child) {
+.hour {
     display:flex;
     flex-direction:column;
     border:.5px solid var(--c14);
@@ -167,8 +176,10 @@
 .lesson {
     display:flex;
     flex-direction:column;
-
+    min-width:20px;
+    overflow:hidden;
 }
+
 /* связано с showTwoLessons */
 .lesson_count {
     width:100%;
@@ -244,7 +255,118 @@
 }
 
 
+.schedule__popup {
+    display:none;
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:9;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    align-items:center;
+    justify-content:center;
+}
+.schedule__popup__in {
+    display:flex;
+    width:496px;
+    flex-direction:column;
+    background:var(--c1);
+    box-shadow: 0px 0px 24px 8px var(--c3);
+    z-index:10;
+    border-radius:8px;
+    padding:32px;
+    gap:24px;
+}
 
+.timezone {
+    display:flex;
+    flex:0 0 92px;
+}
+
+.empty:first-child {
+    flex:0 0 48px;
+}
+.timezone {
+    background-image:
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--c6)"><path d="M10 13.66L16.36 7.3a1 1 0 0 1 1.4 1.42l-7.07 7.05a1 1 0 0 1-1.4 0L2.22 8.72a1 1 0 1 1 1.42-1.42L10 13.66z"/></svg>');
+    background-position: calc(100% - 24px) center; /* Расположение стрелки */
+    background-size: 12px; /* Размер стрелки */
+    background-repeat: no-repeat;
+}
+
+.filter_schedule {
+    background-image:
+    url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="var(--c6)"><path d="M10 13.66L16.36 7.3a1 1 0 0 1 1.4 1.42l-7.07 7.05a1 1 0 0 1-1.4 0L2.22 8.72a1 1 0 1 1 1.42-1.42L10 13.66z"/></svg>');
+    background-position: calc(100% - 24px) center; /* Расположение стрелки */
+    background-size: 12px; /* Размер стрелки */
+    background-repeat: no-repeat;
+    border:.5px solid var(--c4);
+    border-radius:4px;
+    padding:14px 12px;
+    max-width:300px;
+}
+
+.cross__in {
+    height:30px;
+    width:30px;
+    border-radius:8px;
+    background:var(--c3);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+.cross__in_line {
+    background:var(--c15);
+    width:12px;
+    height:1px;
+    position:absolute;
+}
+.cross__in_line:first-child {
+    transform:rotate(45deg);
+}
+.cross__in_line:last-child {
+    transform:rotate(-45deg);
+}
+
+
+.lesson_info {
+    padding-bottom:24px;
+    border-bottom:1px solid var(--c14);
+}
+.lesson_info__in {
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    padding:12px;
+    background:var(--c1);
+    border-radius:8px;
+}
+.lesson_info__in:hover {
+    background:var(--c7);
+}
+
+.scroll_lessons {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* Для Firefox */
+    scrollbar-color: var(--c4) transparent; /* Для Firefox */
+}
+
+/* Для WebKit браузеров (Chrome, Safari и др.) */
+.scroll_lessons::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Для ползунка */
+.scroll_lessons::-webkit-scrollbar-thumb {
+    background-color: var(--c4);
+    border-radius: 6px;
+}
 
 @media (max-width:768px) {
     .schedule__col1 {
@@ -261,7 +383,31 @@
     .lesson * {
         font-size:12px !important;
     }
+    .day_of_week {
+        font-size:14px;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
 }
+@media (max-width:414px) {
+    .timezone_col {
+        writing-mode: vertical-rl;
+        flex:0 0 22px;
+        width:22px;
+        transform:rotate(180deg);
+    }
+
+    .empty:first-child {
+        flex:0 0 22px;
+        width:22px;
+    }
+    .lesson * {
+        font-size:8px !important;
+    }
+}
+
+
 
 /* {
     border:1px solid green;

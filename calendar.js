@@ -27,8 +27,6 @@ function colorizeFirstAndLastWeek() {
 // Вызываем функцию
 colorizeFirstAndLastWeek();
 
-
-
 function colorizeActiveWeek() {
     // Получаем все недели
     var weeks = document.querySelectorAll('.date__week');
@@ -68,12 +66,20 @@ function clearActiveDates(context) {
 
 function toggleDateActive(event, context) {
     if (event.target.classList.contains('day')) {
+        // Получаем значение дня
+        var dayValue = event.target.textContent.trim();
+        console.log('Значение дня:', dayValue);
+
+        // Удаляем класс date__active у всех дней
         const allDays = context.querySelectorAll('.day');
         allDays.forEach(function(day) {
             day.classList.remove('date__active');
         });
+
+        // Добавляем класс date__active к выбранному дню
         event.target.classList.add('date__active');
         colorizeActiveWeek();
+
         // Устанавливаем флаг, что элемент уже был выбран в этом месяце
         dateAlreadyActive = true;
         // Очищаем активные даты в других месяцах
@@ -87,6 +93,7 @@ document.querySelectorAll('.date').forEach(function(date) {
         toggleDateActive(event, date);
     });
 });
+
 
 
 
@@ -210,3 +217,28 @@ window.addEventListener('resize', function() {
         calendar.style.display = 'none';
     }
 });
+
+
+
+//открыть попап с уроками
+document.addEventListener('DOMContentLoaded', function() {
+    const hours = document.querySelectorAll('.hour');
+    const popup = document.querySelector('.schedule__popup');
+
+    hours.forEach(hour => {
+        hour.addEventListener('click', function() {
+            popup.style.display = 'flex';
+        });
+    });
+});
+
+//закрыть попап с уроками
+function closeLessons() {
+    const popup = document.querySelector('.schedule__popup');
+    if (popup) {
+        popup.style.display = 'none';
+    }
+}
+
+
+

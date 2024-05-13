@@ -78,10 +78,11 @@ button {
 
 body {
     background:var(--c2);
+    position:relative;
 }
 header {
     width:100%;
-    padding:40px 40px 0px 40px;
+    padding:20px 20px 0px 20px;
     position:sticky;
     top:0;
     left:0;
@@ -103,7 +104,7 @@ header {
 }
 main {
     width:100%;
-    padding:40px;
+    padding:20px;
 }
 
 .main_in {
@@ -113,7 +114,7 @@ main {
 
 footer {
     width:100%;
-    padding:40px;
+    padding:20px;
 }
 .footer_in {
     display:flex;
@@ -230,13 +231,14 @@ label {
     display: flex;
 }
 
+.select {
+
+}
 
 
 
 
-
-/*
-* {
+/* {
     border:1px solid green;
 }
 
