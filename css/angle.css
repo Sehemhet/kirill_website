@@ -1,0 +1,11 @@
+/* анимированый уголок выпадающего списка */
+.angle {
+    width:10px;
+    height:10px;
+    border-right:2px solid var(--c6);
+    border-bottom:2px solid var(--c6);
+    transform:rotate(45deg);
+}
+.angle_act {
+    transform:rotate(-135deg);
+}

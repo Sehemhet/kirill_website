@@ -1,0 +1,268 @@
+.schedule {
+    width:100%;
+    height:790px;
+    border-radius:24px;
+    border:1px solid var(--c14);
+    background:var(--c1);
+    padding:16px 0px;
+    display:flex;
+    overflow:hidden;
+}
+
+.schedule__col1 {
+    border-right:1px solid var(--c14);
+    display:flex;
+    flex:0 1 272px;
+    height:100%;
+    flex-direction:column;
+    justify-content:space-between;
+    padding:0px 8px;
+
+}
+.schedule__col2 {
+    flex: 1 1 auto;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.point {
+    display:flex;
+    align-items:center;
+    gap:4px;
+    padding:4px 8px
+
+}
+.point::before {
+    content:'';
+    display:flex;
+    width:8px;
+    height:8px;
+    border-radius:50%;
+}
+.point_grey::before {
+    background:var(--c15);
+}
+.point_yellow::before {
+    background:var(--c16);
+}
+.point_green::before {
+    background:var(--c17);
+}
+.point_red::before {
+    background:var(--c18);
+}
+
+.month {
+}
+.weeks {
+
+}
+.date {
+    display:none;
+}
+.active {
+    display:block;
+}
+.date__week {
+
+}
+.day {
+}
+.date__active {
+    border-radius:4px;
+    background:var(--c10);
+    color:var(--c1);
+}
+
+.schedule__angle_l {
+    width:10px;
+    height:10px;
+    border-right:2px solid var(--c6);
+    border-bottom:2px solid var(--c6);
+    transform:rotate(135deg);
+}
+.schedule__angle_r {
+    width:10px;
+    height:10px;
+    border-right:2px solid var(--c6);
+    border-bottom:2px solid var(--c6);
+    transform:rotate(-45deg);
+}
+
+.filter_schedule[type="text"]  {
+    background-image:
+        url('data:image/svg+xml;utf8,'), /* Первая картинка */
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgba(47, 128, 237, 1)"><path d="M10 13.66L16.36 7.3a1 1 0 0 1 1.4 1.42l-7.07 7.05a1 1 0 0 1-1.4 0L2.22 8.72a1 1 0 1 1 1.42-1.42L10 13.66z"/></svg>'); /* Вторая картинка */
+    background-position:
+        8px center, /* Позиция первой картинки */
+        calc(100% - 8px) center; /* Позиция второй картинки */
+    background-size:
+        16px, /* Размер первой картинки */
+        16px; /* Размер второй картинки */
+    background-repeat: no-repeat;
+    padding-left:30px;
+}
+
+.filter_schedule[type="text"]:focus {
+    background-image:
+        url('data:image/svg+xml;utf8,'), /* Первая картинка */
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="rgba(47, 128, 237, 1)"><path d="M10 6.34L3.64 12.7a1 1 0 0 1-1.4-1.42l7.07-7.05a1 1 0 0 1 1.4 0l7.07 7.05a1 1 0 0 1-1.4 1.42L10 6.34z"/></svg>'); /* Вторая картинка */
+}
+
+
+.hour {
+    min-height:80px;
+    width:100%;
+    padding:4px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+}
+.hour:first-child {
+    font-size:12px;
+    flex:0 0 48px;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+}
+.hour:not(:first-child) {
+    display:flex;
+    flex-direction:column;
+    border:.5px solid var(--c14);
+}
+
+/* Сделать вертикальную полосу прокрутки всегда видимой */
+.lessons {
+    width: 100%;
+    height: 600px;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* Для Firefox */
+    scrollbar-color: var(--c4) transparent; /* Для Firefox */
+}
+
+/* Для WebKit браузеров (Chrome, Safari и др.) */
+.lessons::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Для ползунка */
+.lessons::-webkit-scrollbar-thumb {
+    background-color: var(--c4);
+    border-radius: 6px;
+}
+
+/* Для трека (бара) */
+.lessons::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.lessons__row {
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+}
+
+
+.lesson {
+    display:flex;
+    flex-direction:column;
+
+}
+/* связано с showTwoLessons */
+.lesson_count {
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+}
+.lesson_count span {
+    background:var(--c6);
+    color:var(--c3);
+    font-size:10px;
+    height:16px;
+    padding:0 8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+}
+
+
+/* бургер для календаря */
+.burger_calendar * {
+    transition: all 0.5s ease;
+}
+.burger_calendar {
+    height:20px;
+    width:30px;
+    position:relative;
+    display:none;
+}
+.burger__line_1,
+.burger__line_2,
+.burger__line_3 {
+    width:100%;
+    height:2px;
+    background:var(--c6);
+    position:absolute;
+}
+.burger__line_1 {
+    top:0;
+    left:0;
+}
+.burger__line_2 {
+    top:50%;
+    transform:translateY(-50%);
+    left:0;
+}
+.burger__line_3 {
+    bottom:0;
+    left:0;
+}
+
+.burger_cross {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    align-items:flex-start;
+}
+.burger_cross .burger__line_1 {
+    transform: rotate(45deg) translateY(-50%);
+    transform-origin: top left;
+}
+.burger_cross .burger__line_2 {
+    display:none;
+}
+.burger_cross .burger__line_3 {
+    transform: rotate(-45deg) translateY(50%);
+    transform-origin: bottom left;
+}
+.burger_cross:hover  {
+    transform:scale(1.1);
+    transition: all 0.5s ease;
+}
+
+
+
+
+@media (max-width:768px) {
+    .schedule__col1 {
+        display:none;
+    }
+    .burger_calendar {
+        display:flex;
+    }
+    .schedule__col2 {
+        .fs18 {
+            font-size:12px;
+        }
+    }
+    .lesson * {
+        font-size:12px !important;
+    }
+}
+
+/* {
+    border:1px solid green;
+}

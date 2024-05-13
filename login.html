@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+<main class="h100vh p16">
+    <div class="f f_f w h g8 w1540M _I_">
+        <div class="f fc h f_f f50">
+            <!--шапка-->
+            <div class="f fc w">
+                <h1 class="T fs28">
+                    STWBH
+                </h1>
+                <span class="fs14">
+                    IT Education and Services
+                </span>
+            </div>
+
+            <!--форма логина-->
+            <form id="login" action="" method="post" class="f f_a h fac _f_ fc g16 w352 _m_">
+                <!--заголовок-->
+                <div class="f">
+                    <h2 class="fs28">
+                        Рады Вас видеть!
+                    </h2>
+                </div>
+                <!--форма-->
+                <div class="w f fc g16">
+                    <!--инпуты-->
+                    <div class="f fc g16">
+                        <label>Ваш e-mail
+                            <input type="email" placeholder="Введите e-mail" class="m8t">
+                        </label>
+                        <label>Пароль
+                            <input type="password" placeholder="Введите пароль" class="m8t">
+                        </label>
+                    </div>
+                    <!--забыли пароль-->
+                    <div class="f w _f">
+                        <a href="#" class="fs14 blue_link" onclick="passwordForget();">
+                            Забыли пароль?
+                        </a>
+                    </div>
+                    <!--кнопки-->
+                    <div class="f fc g32">
+                        <button type="submit" class="btn_full">
+                            Войти
+                        </button>
+                        <div class="line">
+
+                        </div>
+                        <button type="submit" class="g4 btn_border">
+                            <span class="w20">
+                                <img src="images/_2.webp" alt="google logo">
+                            </span>
+                            <span>
+                                Войти с помощью Google
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <!--регистрация-->
+                <div>
+                    <span class="fs14">
+                        У Вас нет аккауна? <a href="#" onclick="openRegistration();" class="blue_link">Зарегестируйтесь сейчас</a>
+                    </span>
+                </div>
+            </form>
+            <!--форма регистрации-->
+            <form id="registration" action="" method="post" class="f f_a h fac _f_ fc g16 w352 _m_">
+                <!--заголовок-->
+                <div class="f">
+                    <h2 class="fs28">
+                        Вы почти у цели!
+                    </h2>
+                </div>
+                <!--форма-->
+                <div class="w f fc g16">
+                    <!--инпуты-->
+                    <div class="f fc g16">
+                        <label>Ваш имя
+                            <input type="text" placeholder="Введите имя" class="m8t">
+                        </label>
+                        <label>Ваш e-mail
+                            <input type="email" placeholder="Введите e-mail" class="m8t">
+                        </label>
+                        <label>Пароль
+                            <input type="password" placeholder="Введите пароль" class="m8b m8t">
+                            <span class="c5 fs12">
+                                Пароль должен содержать минимум 8 символов
+                            </span>
+                        </label>
+                        <span class="fs12">
+                        </span>
+                        <label>Повторите пароль
+                            <input type="password" placeholder="Повторите пароль" class="m8t">
+                        </label>
+                    </div>
+                    <!--кнопки-->
+                    <div class="f fc g32">
+                        <button type="submit" class="btn_full">
+                            Зарегистрироваться
+                        </button>
+                    </div>
+                </div>
+                <!--line-->
+                <div class="line"></div>
+                <!--регистрация-->
+                <div>
+                    <span class="fs14 c6">
+                        Уже есть аккаунт? <a href="#" onclick="openLogin();" class="blue_link">Войти сейчас</a>
+                    </span>
+                </div>
+            </form>
+            <!--форма забытого пароля-->
+            <form id="password_forget" action="" method="post" class="f f_a h fac _f_ fc g16 w352 _m_ n">
+                <!--заголовок-->
+                <div class="f">
+                    <h2 class="fs28">
+                        Рады Вам помочь!
+                    </h2>
+                </div>
+                <!--форма-->
+                <div class="w f fc g16">
+                    <!--инпуты-->
+                    <div class="f fc g16">
+                        <label>Ваш e-mail
+                            <input type="email" placeholder="Введите e-mail" class="m8t">
+                        </label>
+                    </div>
+
+                    <!--кнопки-->
+                    <div class="f fc g32">
+                        <button type="submit" class="btn_full">
+                            Отправить
+                        </button>
+                        <div class="line">
+
+                        </div>
+                        <button type="submit" class="g4 btn_border">
+                            <span class="w20">
+                                <img src="images/_2.webp" alt="google logo">
+                            </span>
+                            <span>
+                                Войти с помощью Google
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <!--регистрация-->
+                <div>
+                    <span class="fs14">
+                        У Вас нет аккауна? <a href="#" onclick="openRegistration();" class="blue_link">Зарегестируйтесь сейчас</a>
+                    </span>
+                </div>
+            </form>
+            <!--политика конфиденциальности-->
+            <div class="f">
+                <span class="T_t fs14 lh25 c5">
+                    Совершая регистрацию, Вы соглашаетесь с <br class="y608"><a href="" class="_bb c6">Политикой конфиденциальности</a>
+                </span>
+            </div>
+
+        </div>
+        <div class="f50 n768">
+            <img src="images/_1.webp" alt="php js python" class="_br8">
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

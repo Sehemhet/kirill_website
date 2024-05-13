@@ -1,5 +1,6 @@
-a {
-    color:var(--c4);
+
+span, p {
+    line-height:20px;
 }
 
 a:hover {
@@ -14,75 +15,228 @@ button {
     display:flex;
     align-items:center;
     justify-content:center;
+}
+
+.btn_full {
     height:48px;
-    background:var(--c6);
-    color:var(--c5);
     border-radius:8px;
+    background:var(--c10);
+    color:var(--c1);
 }
-
-button:hover {
-    cursor:pointer;
-    background:var(--c7);
+.btn_full:hover {
+    background:var(--c9);
 }
-
-button:active {
-    cursor:pointer;
-    background:var(--c8);
+.btn_full:active {
+    background:var(--c11);
+}
+.btn_full:disabled {
+    background:var(--c14);
+}
+.btn_border {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:48px;
+    border-radius:8px;
+    border:1px solid var(--c10);
+    color:var(--c6);
+}
+.btn_border:hover {
+    border:1px solid var(--c9);
+    color:var(--c6);
+}
+.btn_border:active {
+    border:1px solid var(--c11);
+    color:var(--c6);
+}
+.btn_border:disabled {
+    border:1px solid var(--c14);
+    color:var(--c14);
+}
+.btn_color {
+    height:48px;
+    color:var(--c10);
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+.btn_color::after {
+    content:'→';
+    width:10px;
+    right:0px;
+    top:0px;
+}
+.btn_color:hover {
+    color:var(--c9);
+}
+.btn_color:active {
+    color:var(--c11);
+}
+.btn_color:disabled {
+    color:var(--c14);
 }
 
 body {
+    background:var(--c2);
 }
-
 header {
-
+    width:100%;
+    padding:40px 40px 0px 40px;
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:9;
+    background:var(--c1);
+}
+.header_in {
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    max-width:1540px;
+    margin:0 auto;
+    height:100px;
+    background:var(--c1);
+    border:1px solid var(--c14);
+    border-radius:24px;
+    padding:25px 40px;
+    position:relative;
+}
+main {
+    width:100%;
+    padding:40px;
 }
 
-main {
+.main_in {
     max-width:1540px;
-    padding:20px 40px;
-    height:100vh;
-    margin:0 auto;
+    margin: 0 auto;
 }
 
 footer {
-
+    width:100%;
+    padding:40px;
+}
+.footer_in {
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    max-width:1540px;
+    margin: 0 auto;
 }
 
 img {
     width:100%;
     height:100%;
-    object-fit:fill;
+    object-fit:cover;
 }
 
 .line {
     width:100%;
     height:1px;
-    background:var(--c1);
+    background:var(--c3);
 }
 
 h1,h2,h3,h4,h5,h6 {
     font-weight:700;
+    color: var(--c6);
 }
 
 input {
-  padding: 16px;
-  background: var(--c9);
-  border-radius: 8px;
-  width: 100%;
-  box-sizing: border-box;
-  font-size:
-  color:var(--c3);
+    padding: 16px;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    color:#2F2F2F;
+}
+input {
+    color:var(--c6);
+    border:1px solid var(--c4);
+}
+input::placeholder {
+    color:var(--c4);
+}
+input:focus {
+    border:1px solid var(--c6);
 }
 
 
 label {
     font-size:12px;
     width:100%;
+    color:var(--c6);
 }
 
+
+.avatar {
+    height:140px;
+    border-radius:50%;
+    overflow:hidden;
+    flex:0 0 140px;
+    width:140px;
+}
+
+.user_chapter {
+    width:100%;
+    margin:80px auto;
+}
+
+.tabs {
+    display:flex;
+    gap:32px;
+    align-items:center;
+    border-bottom:1px solid var(--c14);
+}
+.tabs__item {
+    color:var(--c5);
+    font-size:18px;
+    padding-bottom:12px;
+}
+.tab__current {
+    border-bottom:1px solid var(--c6);
+    color:var(--c6);
+}
+
+
+
+.blue_link {color:var(--c10);}
+.blue_link:hover {color:var(--c9);}
+.blue_link:active {color:var(--c11);}
+
 #registration {display:none;}
+#password_forget {display:none;}
+
+.my_settings {
+    display:flex;
+    width:100%;
+    flex-direction:column;
+    gap:32px;
+}
+.interesting {
+    display:flex;
+    flex-direction:column;
+    gap:32px;
+    width:100%;
+    margin-top:100px;
+}
+
+.shadow {
+    box-shadow: 0px 0px 8px 8px rgba(42, 52, 63, 0.06);
+}
+.tabs__block {
+    display:none;
+}
+.active-tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+
+
+
+
 
 /*
 * {
     border:1px solid green;
 }
+

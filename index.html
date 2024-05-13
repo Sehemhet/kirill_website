@@ -11,136 +11,2005 @@
 <body>
 
 <header>
+    <div class="header_in">
+        <div class="burger" onclick="burgerMenu()">
+            <div class="burger__line_1"></div>
+            <div class="burger__line_2"></div>
+            <div class="burger__line_3"></div>
+        </div>
+        <div class="f fc">
+            <h1 class="T fs28">
+                STWBH
+            </h1>
+            <span class="fs14 n768">
+                    IT Education and Services
+                </span>
+        </div>
+        <nav class="f g32 fac n768">
+            <a href="">
+                Обучение
+            </a>
+            <span class="n768">
+                    |
+                </span>
+            <a href="">
+                IT Услуги
+            </a>
+        </nav>
+        <div class="f fac g16 f_f">
+            <div class="w40 h40 _br50 b2 c5 f _f_ fac">
+                <!--Первая буква имени-->
+                <!--условие ninja-->
+                <span class="avatar f _f_ fac w40 h40 b6">
+                        А
+                </span>
+                <!--или-->
+                <!--                    Если имеется изображение, тогда его отоброжать вместо первой буквы имени-->
+                <img class="_br50 n" src="images/person.jpeg" alt="">
+                <!--конец условие ninja-->
 
+            </div>
+            <div class="n768">
+                Анастасия
+            </div>
+            <div class="wrap_angel f fac _f_ p16" onclick="popupPerson();">
+                <div class="angle"></div>
+            </div>
+        </div>
+        <div class="popup_person">
+            <a href="#" class="">
+                <div class="icon_person"></div>
+                <span>
+            Профиль
+        </span>
+            </a>
+            <a href="#" >
+                <div class="icon_plus"></div>
+                <span>
+            Порекомендовать другу
+        </span>
+            </a>
+            <a href="#">
+                <div class="icon_question"></div>
+                <span>
+            Служба поддержки
+        </span>
+            </a>
+            <div class="line"></div>
+            <a href="#">
+                <div class="icon_exit"></div>
+                <span>
+            Служба поддержки
+        </span>
+            </a>
+        </div>
+    </div>
 </header>
 
 <main>
-    <div class="f f_f w h gap8">
-        <div class="f fc h f_f f50">
-            <!--шапка-->
-            <div class="f fc w">
-                <h1 class="T fs28">
-                    STWBH
-                </h1>
-                <span class="fs14">
-                    IT Education and Services
-                </span>
-            </div>
+    <div class="main_in">
 
-            <!--форма-->
-            <form id="login" action="" method="post" class="f f_auto h fac _f_ fc gap32 w352 _m_">
-                <!--заголовок-->
-                <div class="f">
-                    <h2 class="fs28">
-                        Рады Вас видеть!
-                    </h2>
+        <section class="user_chapter f g32 fac">
+            <div class="avatar n608">
+                <img src="images/person.jpeg" alt="avatar">
+            </div>
+            <div class="f fc g16">
+                <h2 class="fs42 w">
+                    Добро пожаловать, Анастасия!
+                </h2>
+
+                <!--условие ninja-->
+                <div class="f g8">
+                    <svg width="22px" height="22px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#FF5151" stroke="#FF5151"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>attention</title> <desc>Created with Sketch.</desc> <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="ui-gambling-website-lined-icnos-casinoshunter" transform="translate(-1122.000000, -282.000000)" fill="#FF5151" fill-rule="nonzero"> <g id="square-filled" transform="translate(50.000000, 120.000000)"> <path d="M1090,162 C1099.94113,162 1108,170.058875 1108,180 C1108,189.941125 1099.94113,198 1090,198 C1080.05887,198 1072,189.941125 1072,180 C1072,170.058875 1080.05887,162 1090,162 Z M1090,164 C1081.16344,164 1074,171.163444 1074,180 C1074,188.836556 1081.16344,196 1090,196 C1098.83656,196 1106,188.836556 1106,180 C1106,171.163444 1098.83656,164 1090,164 Z M1090,186 C1090.55228,186 1091,186.447715 1091,187 C1091,187.552285 1090.55228,188 1090,188 C1089.44772,188 1089,187.552285 1089,187 C1089,186.447715 1089.44772,186 1090,186 Z M1090,172 C1090.55228,172 1091,172.447715 1091,173 L1091,183 C1091,183.552285 1090.55228,184 1090,184 C1089.44772,184 1089,183.552285 1089,183 L1089,173 C1089,172.447715 1089.44772,172 1090,172 Z" id="attention"> </path> </g> </g> </g> </g></svg>
+                    <span class="fs18 lh25">
+                        Пожалуйста, перейдите в <a href="" class="blue_link">Настройки</a> и подвяжите свой номер телефона в Telegam к платформе для дальнейшей связи с преподавателем
+                    </span>
                 </div>
-                <!--форма-->
-                <div class="w f fc gap16">
-                    <!--инпуты-->
-                    <div class="f fc gap16">
-                        <label>Ваш e-mail
-                            <input type="email" placeholder="Введите e-mail">
-                        </label>
-                        <label>Пароль
-                            <input type="password" placeholder="Введите пароль">
-                        </label>
-                    </div>
-                    <!--забыли пароль-->
-                    <div class="f w _f">
-                        <a href="" class="fs12">
-                            Забыли пароль?
+                <!--или-->
+                <div class="n">
+                    <a href="mailto:" class="blue_link">
+                        @telegranameplaceholder
+                    </a>
+                </div>
+                <!--конец условие ninja-->
+
+
+            </div>
+        </section>
+
+        <section class="my_settings">
+            <div class="tabs">
+                <button type="button" onclick="showTab('tab_1', this)" class="tabs__item">
+                    Мои курсы
+                </button>
+                <button type="button" onclick="showTab('tab_2', this)" class="tabs__item">
+                    Расписание
+                </button>
+                <button type="button" onclick="showTab('tab_3', this)" class="tabs__item">
+                    Мои платежи
+                </button>
+            </div>
+            <div id="tab_1" class="fc g32 w tabs__block">
+                <h3 class="fs28">
+                    Текущие курсы
+                </h3>
+                <div class="f g16 f_f w fw">
+                    <div class="f f_320 fc g16 p32 _br8 b1 _b f_f">
+                        <div class="f">
+                            <img src="images/python.png" alt="" class="w60 h60 z2">
+                            <img src="images/man.png" alt="" class="w60 h60 z1 left25">
+                        </div>
+                        <h4 class="fs22">
+                            Python Beginner
+                        </h4>
+                        <div class="f fc g4">
+                            <span class="fs14 c6">
+                                Преподаватель: Александр Иванов
+                            </span>
+                            <span class="fs14 c5">
+                                Занятий на балансе: 6
+                            </span>
+                        </div>
+
+                        <a href="#" class="btn_full f g8 fac _f_ w240">
+                            <div class="w16">
+                                <img src="images/telegram.png" alt="telegram">
+                            </div>
+                            <span>
+                                Написать преподавателю
+                            </span>
                         </a>
                     </div>
-                    <!--кнопки-->
-                    <div class="f fc gap32">
-                        <button type="submit">
-                            Войти
-                        </button>
-                        <div class="line">
+                    <div class="f f_320 fc g16 p32 _br8 b1 _bd f_f">
+                        <div>
+                            <img src="./images/placeholder.png" alt="Дополняйте свои знания! Здесь может быть еще один Ваш курс" class="w80 h80">
+                        </div>
+                        <span class="c6 fs18">
+                            Дополняйте свои знания! Здесь может быть еще один Ваш курс
+                        </span>
+                        <a href="#" class="btn_border w240">
+                            Получить консультацию
+                        </a>
+                    </div>
+                    <div class="f f_320 fc g16 p32 _br8 b3 _b f_f">
+                        <div>
+                            <img src="./images/placeholder-3.png" alt="Ловите подарок за рекомендацию!" class="w80 h80">
+                        </div>
+                        <h4 class="fs22">
+                            Ловите подарок за рекомендацию!
+                        </h4>
+                        <span class="fs14 ">
+                            Порекомендуйте нашу платформу знакомым и получите 1 бесплатное занятие
+                        </span>
+                        <a href="#" class="btn_color w176">
+                            Порекомендовать
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="tab_2" class="fc g32 w tabs__block">
+                <h3 class="fs28">
+                    Ваш график
+                </h3>
+                <div class="schedule">
+                    <div class="schedule__col1">
+                        <div class="f fc w">
+                            <div class="month">
+                                <div class="f fac f_f w p8">
+                                    <div class="f p8" onclick="monthPag(1)">
+                        <span class="schedule__angle_l">
+</span>
+                                    </div>
+                                    <span class="month__name">
+
+                    </span>
+                                    <div class="f p8" onclick="monthPag(-1)">
+                        <span class="schedule__angle_r">
+</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="weeks">
+                                <div class="f w fac f_f">
+                <span class="f_32 f fac _f_ p8">
+                    Пн
+                </span>
+                                    <span class="f_32 f fac _f_ p8">
+                    Вт
+                </span>
+                                    <span class="f_32 f fac _f_ p8">
+                    Ср
+                </span>
+                                    <span class="f_32 f fac _f_ p8">
+                    Чт
+                </span>
+                                    <span class="f_32 f fac _f_ p8">
+                    Пт
+                </span>
+                                    <span class="f_32 f fac _f_ p8">
+                    Сб
+                </span>
+                                    <span class="f_32 f fac _f_ p8">
+                    Вс
+                </span>
+                                </div>
+                            </div>
+                            <div class="month_slider">
+                                <div id="may" class="date" data-name="Май">
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    26
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    27
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    28
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    29
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    30
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    31
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    1
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    2
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    3
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    4
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    5
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    6
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    7
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    8
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8">
+                    9
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    10
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    11
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    12
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    13
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    14
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    15
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    16
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    17
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    18
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    19
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    20
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    21
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    22
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    22
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    23
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    24
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    25
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    26
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    27
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    28
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    29
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    30
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    31
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    1
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    2
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    3
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    4
+                </span>
+                                    </div>
+                                </div>
+                                <div id="june" class="date" data-name="Июнь">
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    26
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    27
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    28
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    29
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    30
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    31
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    1
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    2
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    3
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    4
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    5
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    6
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    7
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    8
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8">
+                    9
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    10
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    12
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    12
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    12
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    12
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    15
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    16
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    17
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    18
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    19
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    20
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    21
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    22
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    22
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    23
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    24
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    25
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    26
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    27
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    28
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    29
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    30
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    31
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    1
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    2
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    3
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    4
+                </span>
+                                    </div>
+                                </div>
+                                <div id="jule" class="date" data-name="Июль">
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    26
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    27
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    28
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    29
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    30
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    31
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    1
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    2
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    2
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    2
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    2
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    6
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    7
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    8
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8">
+                    9
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    10
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    11
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    12
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    13
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    14
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    15
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    16
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    17
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    18
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    19
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    20
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    21
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    22
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    22
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    23
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    24
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    25
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    26
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    27
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    28
+                </span>
+                                    </div>
+                                    <div class="date__week f w fac f_f _br4">
+                <span class="f_32 f fac _f_ p8 day">
+                    29
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    30
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    31
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    1
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    2
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    3
+                </span>
+                                        <span class="f_32 f fac _f_ p8 day">
+                    4
+                </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
 
                         </div>
-                        <button type="submit" class="gap4 b2">
-                            <span class="w20">
-                                <img src="images/_2.webp" alt="">
-                            </span>
-                            <span>
-                                Войти с помощью Google
-                            </span>
-                        </button>
+                        <div class="f fc g4 w">
+            <span class="point point_grey">
+                Прошедшие
+            </span>
+                            <span class="point point_yellow">
+                Ожидает подтверждения
+            </span>
+                            <span class="point point_green">
+                Подтвержденные
+            </span>
+                            <span class="point point_red">
+                Отмененные
+            </span>
+                        </div>
                     </div>
-                </div>
-                <!--регистрация-->
-                <div>
-                    <span class="fs12">
-                        У Вас нет аккауна? <a href="#" onclick="openRegistration();">Зарегестируйтесь сейчас</a>
-                    </span>
-                </div>
-            </form>
-
-            <form id="registration" action="" method="post" class="f f_auto h fac _f_ fc gap32 w352 _m_">
-                <!--заголовок-->
-                <div class="f">
-                    <h2 class="fs28">
-                        Вы почти у цели!
-                    </h2>
-                </div>
-                <!--форма-->
-                <div class="w f fc gap16">
-                    <!--инпуты-->
-                    <div class="f fc gap16">
-                        <label>Ваш имя
-                            <input type="text" placeholder="Введите имя">
-                        </label>
-                        <label>Ваш e-mail
-                            <input type="email" placeholder="Введите e-mail">
-                        </label>
-                        <label>Пароль
-                            <input type="password" placeholder="Введите пароль">
-                            <span class="c10 fs10">
-                                Пароль должен содержать минимум 8 символов
-                            </span>
-                        </label>
-                        <span class="fs12">
-                        </span>
-                        <label>Повторите пароль
-                            <input type="password" placeholder="Повторите пароль">
-                        </label>
-                    </div>
-                    <!--кнопки-->
-                    <div class="f fc gap32">
-                        <button type="submit">
-                            Зарегистрироваться
-                        </button>
-                    </div>
-                </div>
-                <!--регистрация-->
-                <div>
-                    <span class="fs12">
-                        Уже есть аккаунт? <a href="#" onclick="openLogin();">Войти сейчас</a>
-                    </span>
-                </div>
-            </form>
-
-            <!--политика конфиденциальности-->
-            <div class="f">
-                <span class="T_t fs14">
-                    Совершая регистрацию, Вы соглашаетесь с <a href="" class="_bb c1">Политикой конфиденциальности</a>
+                    <div class="schedule__col2">
+                        <div class="f f_f w g16 fac p8l p8r">
+                            <div class="f g16 fac">
+                                <div class="burger_calendar" onclick="burgerCalendar()">
+                                    <div class="burger__line_1"></div>
+                                    <div class="burger__line_2"></div>
+                                    <div class="burger__line_3"></div>
+                                </div>
+                                <span class="p8l p8r">
+                    01-07 Март 2024
                 </span>
+                            </div>
+                            <div>
+                                <label class="f fc g4">Фильтр
+                                    <input class="filter_schedule" type="text" placeholder="По преподавателям">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="f fc w p8l p8r">
+                            <div class="f f_f w _bt _bb p8t p8b">
+                                <div class="fs12">
+                                    GMT+1
+                                </div>
+                                <div class="fs18 f _f_ w">
+                                    Пн 01
+                                </div>
+                                <div class="fs18 f _f_ w">
+                                    Вт 02
+                                </div>
+                                <div class="fs18 f _f_ w">
+                                    Ср 03
+                                </div>
+                                <div class="fs18 f _f_ w">
+                                    Чт 04
+                                </div>
+                                <div class="fs18 f _f_ w">
+                                    Пт 05
+                                </div>
+                                <div class="fs18 f _f_ w">
+                                    Сб 06
+                                </div>
+                                <div class="fs18 f _f_ w">
+                                    Вс 07
+                                </div>
+                            </div>
+                            <div class="lessons">
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        00:00
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        01:00
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    Css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    Css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    PHP
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    Css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    PHP
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    PHP
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c15">
+                                <span>
+                                    JavaScript
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    JavaScript
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        02:00
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c15">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    Html/css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    Html/css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c15">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        03:00
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                                СSS урок что-то...
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                                СSS урок что-то...
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        04:00
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        05:00
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    Css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    Css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    PHP
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    Css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    PHP
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    PHP
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c15">
+                                <span>
+                                    JavaScript
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    JavaScript
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        06:00
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c15">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    Html/css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    Html/css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c15">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        07:00
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                                СSS урок что-то...
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                                СSS урок что-то...
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        08:00
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        09:00
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    Css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    Css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    PHP
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    Css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    PHP
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                <span>
+                                    PHP
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c15">
+                                <span>
+                                    JavaScript
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                <span>
+                                    JavaScript
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        09:00
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c15">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    Html/css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    Html/css
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c18">
+                                <span>
+                                    СSS
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                        <div class="lesson">
+                                            <div class="fs14 c15">
+                                <span>
+                                    Python
+                                </span>
+                                                <span class="n608">
+                                    урок что-то...
+                                </span>
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                </div>
+                                <div class="lessons__row">
+                                    <div class="hour">
+                                        10:00
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c17">
+                                                СSS урок что-то...
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+
+                                    </div>
+                                    <div class="hour">
+                                        <div class="lesson">
+                                            <div class="fs14 c16">
+                                                СSS урок что-то...
+                                            </div>
+                                            <div class="fs10">
+                                                01:00 - 02:00
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hour">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tab_3" class="fc g32 w tabs__block">
+                <h3 class="fs28">
+                    Мои платежы
+                </h3>
             </div>
 
-        </div>
-        <div class="f50 N768">
-            <img src="images/_1.webp" alt="">
-        </div>
+        </section>
+
+        <section class="interesting">
+            <h3 class="fs28 c6">
+                Вам также может быть интересно
+            </h3>
+            <div class="f g16 fac w scroll_y">
+                <div class="f fc f_320_00 _br8 b1 p32 g32 _b">
+                    <div class="w80 h80">
+                        <img src="./images/placeholder-4.png" alt="Java Script">
+                    </div>
+                    <h4 class="fs22">
+                        Java Script
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Sed viverra proin laoreet aliquam pharetra. Tristique ornare egestas tincidunt quisque. Ac sit accumsan eu nibh sed. Mi ullamcorper ipsum quis enim.
+                    </p>
+                    <a href="#" class="btn_color w144">Детальнее</a>
+                </div>
+                <div class="f fc f_320_00 _br8 b1 p32 g32 _b">
+                    <div class="w80 h80">
+                        <img src="./images/placeholder-4.png" alt="Java Script">
+                    </div>
+                    <h4 class="fs22">
+                        Java Script
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Sed viverra proin laoreet aliquam pharetra. Tristique ornare egestas tincidunt quisque. Ac sit accumsan eu nibh sed. Mi ullamcorper ipsum quis enim.
+                    </p>
+                    <a href="#" class="btn_color w144">Детальнее</a>
+                </div>
+                <div class="f fc f_320_00 _br8 b1 p32 g32 _b">
+                    <div class="w80 h80">
+                        <img src="./images/placeholder-4.png" alt="Java Script">
+                    </div>
+                    <h4 class="fs22">
+                        Java Script
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Sed viverra proin laoreet aliquam pharetra. Tristique ornare egestas tincidunt quisque. Ac sit accumsan eu nibh sed. Mi ullamcorper ipsum quis enim.
+                    </p>
+                    <a href="#" class="btn_color w144">Детальнее</a>
+                </div>
+                <div class="f fc f_320_00 _br8 b1 p32 g32 _b">
+                    <div class="w80 h80">
+                        <img src="./images/placeholder-4.png" alt="Java Script">
+                    </div>
+                    <h4 class="fs22">
+                        Java Script
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur. Sed viverra proin laoreet aliquam pharetra. Tristique ornare egestas tincidunt quisque. Ac sit accumsan eu nibh sed. Mi ullamcorper ipsum quis enim.
+                    </p>
+                    <a href="#" class="btn_color w144">Детальнее</a>
+                </div>
+            </div>
+        </section>
     </div>
 
 </main>
 
 <footer>
+    <div class="footer_in">
+        <address class="f f_f fac w">
+            <a href="tel:" class="fs26 fw700">+000 000 000</a>
+            <div class="f g16 _f_">
+                <a href="#" class="w40 h40">
+                    <img src="./images/telegram_black.png" alt="telegram link">
+                </a>
+                <a href="#" class="w40 h40">
+                    <img src="./images/viber_black.png" alt="viber link">
+                </a>
+            </div>
+            <a href="mailto:" class="fs26 fw700">youraddress@mail.com</a>
+        </address>
+        <div class="f fac f_f w">
+            <div class="burger" onclick="burgerMenu()">
+                <div class="burger__line_1"></div>
+                <div class="burger__line_2"></div>
+                <div class="burger__line_3"></div>
+            </div>
+            <div class="f fc">
+                <h1 class="T fs28">
+                    STWBH
+                </h1>
+                <span class="fs14 n608">
+                    IT Education and Services
+                </span>
+            </div>
+            <nav class="f g32 fac n608">
+                <a href="">
+                    Обучение
+                </a>
+                <span>
+                    |
+                </span>
+                <a href="">
+                    IT Услуги
+                </a>
+            </nav>
+            <div class="f fac g32 f_f">
+                <span>
+                    ©2024 Privacy policy
+                </span>
+            </div>
+        </div>
 
+    </div>
 </footer>
 
 <script src="script.js"></script>
+<script src="calendar.js"></script>
 </body>
 </html>
