@@ -97,9 +97,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
-
-
 function burgerMenu() {
     var header = document.querySelector('header');
     var burger = document.querySelector('.burger');
